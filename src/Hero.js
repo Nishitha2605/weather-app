@@ -19,7 +19,7 @@ function Hero(){
   }
   const handleSave = async() => {
     setIsClicked(true); 
-   
+   console.log('clicked')
     setTimeout(() => {
         setIsClicked(false);
       }, 100);
@@ -67,6 +67,7 @@ const getEmojiForWeather = (description) => {
     <div className='search'>
         <input type='text' placeholder='Enter city name' onChange={handleInput}></input>
         <button onClick={handleSave}  className={`button ${isClicked ? 'clicked' : ''}`}><b>Go</b></button>
+  
         {error && <p style={{ color: "red" }}>{error}</p>}
     </div>   
     { Data && ( 
