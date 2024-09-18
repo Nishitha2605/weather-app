@@ -5,11 +5,19 @@
   align-items: center;
   min-height: 100vh;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
 body{
   background-image: url('./blah.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
+  background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
 
 }
@@ -17,8 +25,7 @@ body{
   display: grid;
   grid-template-rows: auto auto 1fr 1fr; 
   grid-template-columns: 1fr 1fr; 
-  height: 85vh;
-  padding: 20px;
+  height: 87vh;
   width:75%;
   background: rgba(255, 255, 255, 0.062);
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -26,6 +33,8 @@ body{
   -webkit-backdrop-filter: blur( 8px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 10px;
+  overflow: auto;
 }
 .header{
   grid-column: 1/-1;
